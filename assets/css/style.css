@@ -1,0 +1,794 @@
+/* ========================== */
+/* 1. Reset & Variabel Tema */
+/* ========================== */
+:root {
+    /* Palet Warna */
+    --color-dark-primary: #0a0a0c; /* Hampir hitam */
+    --color-dark-secondary: #141418; /* Sedikit lebih terang untuk latar belakang elemen */
+    --color-accent: #00e5ff; /* Cyan Elektrik / Aqua */
+    --color-accent-hover: #00b8d4;
+    --color-text-light: #e0e0e0;
+    --color-text-muted: #888888;
+    
+    /* Ukuran/Jarak */
+    --sidebar-width: 260px;
+    --border-radius-base: 4px;
+    --shadow-glow: 0 0 10px rgba(0, 229, 255, 0.4); /* Efek glow */
+}
+
+/* Reset Standar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya Dasar Body */
+body {
+    font-family: 'Poppins', sans-serif; /* Font modern yang lebih baik */
+    color: var(--color-text-light);
+    background-color: var(--color-dark-primary); 
+    line-height: 1.6;
+    /* Tambahkan transisi halus untuk tema gelap */
+    transition: background-color 0.3s, color 0.3s; 
+    /* Pastikan minimal tinggi penuh */
+    min-height: 100vh;
+}
+
+/* Gaya Tautan */
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Jaga transisi */
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+/* ========================== */
+/* 2. Animasi Glow */
+/* ========================== */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 10px var(--color-accent), inset 0 0 5px var(--color-accent-hover);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--color-accent), inset 0 0 10px var(--color-accent-hover);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--color-accent), inset 0 0 5px var(--color-accent-hover);
+    }
+}
+
+
+/* ========================== */
+/* 3. Sidebar (Header) - #sidebar-nav */
+/* ========================== */
+#sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    z-index: 1050;
+    background-color: var(--color-dark-secondary);
+    padding: 20px 0;
+    overflow-y: auto;
+    
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    /* Tambahkan transisi untuk responsif yang mulus */
+    transition: left 0.4s ease-in-out, width 0.3s ease;
+}
+
+/* Kartu Profil */
+.profile-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    margin: 20px auto;
+    display: block;
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    /* Border efek "Energy Ring" */
+    border: 5px solid var(--color-dark-secondary); 
+    box-shadow: 0 0 0 3px var(--color-accent), var(--shadow-glow); /* Outer glow ring */
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-image:hover {
+    /* Perbaikan: Ganti var(--shadow-glow) agar efeknya lebih menonjol saat hover */
+    box-shadow: 0 0 0 4px var(--color-accent-hover), 0 0 15px var(--color-accent); 
+}
+
+.profile-name a {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-light);
+    letter-spacing: 1px;
+}
+
+.profile-tagline {
+    display: block;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-top: 5px;
+}
+
+/* Ikon Sosial Media */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.social-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-dark-primary);
+    color: var(--color-text-light);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Transisi untuk hover */
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--color-accent-hover);
+    color: var(--color-dark-primary); 
+    /* Gunakan glow */
+    box-shadow: var(--shadow-glow);
+}
+
+/* ========================== */
+/* 4. Navigasi Menu - .nav-menu */
+/* ========================== */
+.nav-menu ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 0;
+}
+
+.nav-menu .nav-link {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-muted);
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent; 
+    border-left: 3px solid transparent; 
+    /* Transisi untuk efek hover/aktif */
+    transition: color 0.3s, background-color 0.3s, border-left-color 0.3s;
+}
+
+.nav-menu .nav-link i {
+    font-size: 18px;
+    padding-right: 15px;
+    color: var(--color-text-muted);
+    width: 40px; 
+    text-align: center;
+    /* Transisi untuk ikon */
+    transition: color 0.3s;
+}
+
+/* Efek Hover/Aktif */
+.nav-menu .nav-link:hover, 
+.nav-menu .nav-link.active {
+    color: var(--color-text-light);
+    background-color: var(--color-dark-primary); 
+    border-left-color: var(--color-accent);
+}
+
+.nav-menu .nav-link:hover i, 
+.nav-menu .nav-link.active i {
+    color: var(--color-accent);
+}
+
+
+/* ========================== */
+/* 5. Konten Utama & Hero */
+/* ========================== */
+#content-main {
+    margin-left: var(--sidebar-width); 
+    min-height: 100vh;
+    /* Tambahkan transisi margin untuk responsif yang mulus */
+    transition: margin-left 0.4s ease-in-out;
+}
+
+
+
+/* ========================== */
+/* 6. Media Queries (Responsif) */
+/* ========================== */
+@media (max-width: 1200px) {
+    /* Aturan untuk laptop kecil/tablet */
+    :root {
+        --sidebar-width: 200px; 
+    }
+    #content-main {
+        margin-left: var(--sidebar-width);
+    }
+}
+
+/* ========================== */
+/* 6. Media Queries (Responsif) */
+/* ========================== */
+
+/* Tablet & HP (Layar di bawah 992px) */
+@media (max-width: 992px) {
+    #sidebar-nav {
+        left: -100%; /* Sembunyikan sidebar ke kiri luar layar */
+        width: 260px;
+        transition: left 0.4s ease-in-out;
+    }
+
+    /* Muncul saat tombol hamburger diklik (via JS) */
+    #sidebar-nav.active {
+        left: 0;
+        box-shadow: 5px 0 20px rgba(0, 229, 255, 0.3);
+    }
+
+    #content-main {
+        margin-left: 0; /* Konten memenuhi seluruh lebar layar */
+        transition: margin-left 0.4s ease-in-out;
+    }
+
+    .hero-section {
+        width: 100%; /* WAJIB 100% agar tidak terpotong */
+        height: 100vh;
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px; /* Ukuran font lebih proporsional untuk HP */
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .detail-item {
+        width: 100%; /* Detail profil menjadi satu kolom vertikal */
+    }
+}
+
+/* ========================== */
+/* 7. Gaya Umum Konten */
+/* ========================== */
+.content-section {
+    padding: 60px 20px;
+    margin-bottom: 0;
+}
+
+.bg-secondary {
+    background-color: var(--color-dark-secondary); /* Sesuai dengan sidebar */
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-lg-4, .col-lg-8, .col-md-4 {
+    padding: 15px;
+}
+.col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+.col-lg-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+.col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--color-text-light);
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: var(--color-text-muted);
+}
+
+/* ========================== */
+/* 8. ABOUT SECTION STYLES */
+/* ========================== */
+.about-grid {
+    align-items: center;
+}
+
+.name-small {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--color-accent);
+}
+
+.tagline-small {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.lead-text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.detail-item {
+    width: 50%; /* Dua kolom */
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.detail-item strong {
+    margin-right: 5px;
+    color: var(--color-text-light);
+}
+
+/* ========================== */
+/* 9. RESUME SECTION STYLES */
+/* ========================== */
+.resume-timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--color-text-muted); /* Garis waktu */
+}
+
+.timeline-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 20px 20px 20px;
+    background: var(--color-dark-primary);
+    border-radius: var(--border-radius-base);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-dark-secondary);
+}
+
+/* Lingkaran Titik Waktu */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid var(--color-dark-secondary);
+    left: -28px;
+    top: 6px;
+    box-shadow: var(--shadow-glow);
+}
+
+.timeline-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 10px 0 5px 0;
+}
+
+.timeline-item h5 {
+    font-size: 16px;
+    background: var(--color-dark-secondary);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-text-light);
+    border-radius: var(--border-radius-base);
+}
+
+.timeline-item ul {
+    padding-left: 20px;
+    list-style-type: '⚡'; /* Icon menarik */
+}
+.timeline-item ul li {
+    margin-bottom: 8px;
+}
+
+/* ========================== */
+/* 10. PORTFOLIO SECTION STYLES */
+/* ========================== */
+
+/* 1. Atur Grid agar lebih stabil */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start; /* Memastikan baris dimulai dari atas yang sama */
+}
+
+/* 2. Berikan tinggi tetap pada container portfolio-item */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    height: 300px; /* TINGGI SERAGAM: Sesuaikan angka ini sesuai keinginan Anda */
+    background: #000; /* Warna dasar jika konten gagal dimuat */
+}
+
+/* 3. Paksa gambar dan video mengisi penuh kotak tanpa merusak rasio */
+.portfolio-item img, 
+.portfolio-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* KUNCINYA: Memotong gambar/video agar memenuhi kotak secara proporsional */
+    display: block;
+    transition: transform 0.4s;
+}
+
+/* 4. Overlay Informasi */
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 15px; /* Sedikit lebih luas */
+    background: rgba(10, 10, 12, 0.85); /* Lebih gelap agar teks jelas */
+    color: var(--color-text-light);
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    backdrop-filter: blur(5px); /* Efek blur kaca yang modern */
+}
+
+.portfolio-item:hover .portfolio-info {
+    transform: translateY(0);
+}
+
+.portfolio-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-accent);
+}
+
+.portfolio-info span {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    display: block;
+    margin-top: 5px;
+}
+
+/* 5. Tombol Aksi di pojok overlay */
+.portfolio-info a {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Menengahkan tombol secara vertikal di overlay */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-accent);
+    border-radius: 50%;
+    color: var(--color-dark-primary);
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
+.portfolio-info a:hover {
+    background: #fff;
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* 6. Penyesuaian Responsif untuk HP */
+@media (max-width: 768px) {
+    .portfolio-item {
+        height: 250px; /* Lebih pendek sedikit di layar kecil */
+    }
+}
+
+/* ========================== */
+/* 11. CONTACT SECTION STYLES */
+/* ========================== */
+
+.contact-details {
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.info-box {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--color-dark-primary);
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--color-dark-secondary);
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+.info-box i {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--color-text-light);
+}
+
+.info-box p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.contact-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact-form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border: 1px solid var(--color-dark-secondary);
+    background: var(--color-dark-primary);
+    color: var(--color-text-light);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px rgba(0, 229, 255, 0.7);
+    outline: none;
+}
+
+.contact-form textarea.form-control {
+    min-height: 120px;
+}
+
+.send-message-btn {
+    background: var(--color-accent);
+    border: 0;
+    padding: 10px 30px;
+    color: var(--color-dark-primary);
+    transition: 0.4s;
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.send-message-btn:hover {
+    background: var(--color-accent-hover);
+    box-shadow: var(--shadow-glow);
+}
+
+/* Penyesuaian Responsif untuk About & Contact */
+@media (max-width: 768px) {
+    .detail-item {
+        width: 100%; /* Satu kolom pada layar kecil */
+    }
+    .col-lg-4, .col-lg-8, .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-details .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+}
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9999;
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-dark-primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Sembunyi di desktop */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: var(--shadow-glow);
+}
+
+@media (max-width: 992px) {
+    .mobile-nav-toggle {
+        display: flex; /* Hanya muncul di mobile/tablet */
+    }
+}
+
+/* =================================================== */
+/* 13. KUSTOMISASI EKSLUSIF G LIGHTBOX (POP-UP)        */
+/* =================================================== */
+
+/* Mengubah latar belakang pop-up menjadi sangat gelap & elegan */
+.glightbox-container .gcontainer {
+    background: rgba(5, 5, 7, 0.98) !important;
+}
+
+/* Mempercantik tampilan gambar di dalam pop-up */
+.gslide-image img {
+    border: 1px solid rgba(0, 229, 255, 0.1); /* Border tipis warna aksen */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Mengatur Kotak Deskripsi (Teks di bawah foto) */
+.gslide-description {
+    background: var(--color-dark-secondary) !important; /* Warna gelap sidebar */
+    border-top: 2px solid var(--color-accent) !important;
+    padding: 20px !important;
+    max-width: 100% !important;
+}
+
+/* Judul di dalam pop-up */
+.gdescription-title {
+    color: var(--color-accent) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+}
+
+/* Teks deskripsi di dalam pop-up */
+.gslide-desc {
+    color: var(--color-text-muted) !important;
+    line-height: 1.6 !important;
+}
+
+/* Tombol Navigasi (Kanan-Kiri) & Close */
+.gnext, .gprev, .gclose {
+    background: rgba(20, 20, 24, 0.5) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.gnext:hover, .gprev:hover, .gclose:hover {
+    background: var(--color-accent) !important;
+}
+
+/* Mengubah warna ikon (panah & silang) */
+.gnext svg, .gprev svg, .gclose svg {
+    color: #fff !important;
+    width: 25px !important;
+}
+
+/* Efek transisi saat gambar berganti agar lebih smooth */
+.gslide {
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+/* Efek Loader (saat gambar loading) */
+.gloader {
+    border: 2px solid var(--color-accent) !important;
+    border-right-color: transparent !important;
+}
+
+
+/* Animasi Kilau (Shimmer) */
+@keyframes shimmer-glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+        border-color: #00e5ff;
+        text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+        border-color: #ffffff;
+        text-shadow: 0 0 15px rgba(0, 229, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+        border-color: #00e5ff;
+        text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+    }
+}
+
+/* Class untuk teks saja yang berkilau */
+.text-sparkle {
+    display: inline-block;
+    animation: shimmer-glow 2s infinite ease-in-out;
+    font-weight: 700;
+}
+
+/* Class untuk box yang berkilau */
+.glow-box-border {
+    border: 2px solid #00e5ff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    animation: shimmer-glow 2s infinite ease-in-out;
+    background: rgba(0, 229, 255, 0.05); /* Sedikit warna transparan di dalam box */
+}
+
+/* =================================================== */
+/* ANIMASI KILAU TEKS GLOBAL                           */
+/* =================================================== */
+
+@keyframes global-shimmer {
+    0% {
+        color: #00e5ff;
+        text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+    }
+    50% {
+        color: #ffffff; /* Kilauan putih di tengah animasi */
+        text-shadow: 0 0 15px rgba(0, 229, 255, 1), 0 0 25px rgba(0, 229, 255, 0.7);
+    }
+    100% {
+        color: #00e5ff;
+        text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+    }
+}
+
+/* Mengaplikasikan kilau pada SEMUA kata berwarna biru (tanpa border) */
+.accent-text, 
+.section-title i, 
+.text-sparkle {
+    display: inline-block;
+    animation: global-shimmer 2s infinite ease-in-out;
+    font-weight: 700;
+}
+
+/* Khusus untuk judul section (About, Contact, dll) agar icon-nya juga berkilau */
+.section-title {
+    color: var(--color-text-light);
+}
+
+/* Tetap pertahankan Glow Box hanya untuk Who Am I (karena kamu minta pakai border) */
+.glow-box-border {
+    border: 2px solid #00e5ff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    animation: global-shimmer 2s infinite ease-in-out;
+    background: rgba(0, 229, 255, 0.05);
+}
