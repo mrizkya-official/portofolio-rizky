@@ -62,6 +62,8 @@
                     <a href="assets/img/fotografi_1.jpeg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
                     <a href="assets/img/fotografi_2.jpeg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
                     <a href="assets/img/fotografi_3.jpeg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
+                    <a href="assets/img/fotografi_4.jpeg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
+                    <a href="assets/img/fotografi_5.jpeg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
                 </div>
             </div>
 
