@@ -8,22 +8,22 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="assets/img/portofolio/project-toefl.jpg" alt="Sistem Ujian Digital">
+                <img src="assets/img/project_toefl.jpg" alt="Sistem Ujian Digital">
                 <div class="portfolio-info">
                     <h4>Sistem Ujian Digital (TOEFL)</h4>
                     <span>Custom Native PHP, MySQL & Integrasi Audio</span>
-                    <a href="assets/img/portofolio/project-toefl.jpg" class="glightbox" data-title="Sistem Ujian Digital (TOEFL)">
+                    <a href="assets/img/project_toefl.jpg" class="glightbox" data-title="Sistem Ujian Digital (TOEFL)">
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
             </div>
             
             <div class="portfolio-item">
-                <img src="assets/img/portofolio/project-absensi.jpg" alt="Sistem Absensi Barcode">
+                <img src="assets/img/project_absensi.jpg" alt="Sistem Absensi Barcode">
                 <div class="portfolio-info">
                     <h4>Sistem Absensi Barcode</h4>
                     <span>PHP Native & Real-time Database Scan</span>
-                    <a href="assets/img/portofolio/project-absensi.jpg" class="glightbox" data-title="Sistem Absensi Barcode">
+                    <a href="assets/img/project_absensi.jpg" class="glightbox" data-title="Sistem Absensi Barcode">
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
