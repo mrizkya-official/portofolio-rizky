@@ -10,7 +10,7 @@
                     <div class="col-lg-8 about-info">
                         <p class="lead-text">
                             <!-- PERUBAHAN 3: Penyesuaian deskripsi utama untuk fokus IT & Administrasi -->
-                            Saya adalah seorang <strong class="accent-text">IT & Administrative Specialist</strong> yang berorientasi pada efisiensi, pengarsipan data, dan dukungan teknis. Dengan latar belakang yang beragam mulai dari Rekayasa Perangkat Lunak, Document Control, hingga Administrasi Pemerintahan, saya memiliki kemampuan unik untuk mengelola dokumentasi, memastikan kepatuhan standar operasional, dan memberikan dukungan teknologi yang cepat dan andal.
+                            Saya adalah seorang <strong class="accent-text">Operations, IT & Administrative Specialist</strong> yang berorientasi pada efisiensi, pengarsipan data, dan dukungan teknis. Dengan latar belakang yang beragam mulai dari Rekayasa Perangkat Lunak, Document Control, hingga Administrasi Pemerintahan, saya memiliki kemampuan unik untuk mengelola dokumentasi, memastikan kepatuhan standar operasional, dan memberikan dukungan teknologi yang cepat dan andal.
                         </p>
                         <p class="mt-4">
                             Kekuatan multi-talent saya adalah kemampuan untuk: <br>
