@@ -1,13 +1,17 @@
 {
   "version": 2,
   "functions": {
-    "api/*.php": {
+    "api/**/*.php": {
       "runtime": "vercel-php@0.8.0"
     }
   },
   "routes": [
     {
       "handle": "filesystem"
+    },
+    {
+      "src": "/api/send-email.php",
+      "dest": "/api/send-email.php"
     },
     {
       "src": "/(.*)",
