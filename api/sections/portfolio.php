@@ -8,15 +8,15 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="assets/img/project_erp.jpg" alt="LOGOSFERIA SAP-ERP">
+                <img src="assets/img/proyek-sap-erp1.jpg" alt="SYSTEM SAP-ERP">
                 <div class="portfolio-info">
-                    <h4>LOGOSFERIA SAP-ERP</h4>
+                    <h4>SYSTEM SAP-ERP</h4>
                     <span>Desktop App: PHPDesktop, PHP Native & MySQL</span>
                     <div class="mt-2">
-                        <a href="URL_GOOGLE_DRIVE_KAMU" target="_blank" class="btn btn-sm btn-primary" title="Download Installer">
+                        <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" target="_blank" class="btn btn-sm btn-primary" title="Download Installer">
                             <i class="fas fa-download"></i> Download Setup
                         </a>
-                        <a href="assets/img/project_erp.jpg" class="glightbox btn btn-sm btn-outline-light" data-title="LOGOSFERIA SAP-ERP (Desktop Version)">
+                        <a href="assets/img/proyek-sap-erp1.jpg" class="glightbox btn btn-sm btn-outline-light" data-title="SYSTEM SAP-ERP (Desktop Version)">
                             <i class="fas fa-search-plus"></i>
                         </a>
                     </div>
