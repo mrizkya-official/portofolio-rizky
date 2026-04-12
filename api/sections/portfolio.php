@@ -8,6 +8,22 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-item">
+                <img src="assets/img/project_erp.jpg" alt="LOGOSFERIA SAP-ERP">
+                <div class="portfolio-info">
+                    <h4>LOGOSFERIA SAP-ERP</h4>
+                    <span>Desktop App: PHPDesktop, PHP Native & MySQL</span>
+                    <div class="mt-2">
+                        <a href="URL_GOOGLE_DRIVE_KAMU" target="_blank" class="btn btn-sm btn-primary" title="Download Installer">
+                            <i class="fas fa-download"></i> Download Setup
+                        </a>
+                        <a href="assets/img/project_erp.jpg" class="glightbox btn btn-sm btn-outline-light" data-title="LOGOSFERIA SAP-ERP (Desktop Version)">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
                 <img src="assets/img/project_toefl.jpg" alt="Sistem Ujian Digital">
                 <div class="portfolio-info">
                     <h4>Sistem Ujian Digital (TOEFL)</h4>
