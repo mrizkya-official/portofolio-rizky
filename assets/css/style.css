@@ -460,12 +460,19 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px 15px; /* Sedikit lebih luas */
-    background: rgba(10, 10, 12, 0.85); /* Lebih gelap agar teks jelas */
+    padding: 20px 15px; 
+    background: rgba(10, 10, 12, 0.9); /* Sedikit lebih pekat agar kontras */
     color: var(--color-text-light);
     transform: translateY(100%);
     transition: transform 0.4s ease-in-out;
-    backdrop-filter: blur(5px); /* Efek blur kaca yang modern */
+    backdrop-filter: blur(8px); /* Blur lebih dalam agar mewah */
+    
+    /* Tambahkan ini: */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .portfolio-item:hover .portfolio-info {
@@ -473,41 +480,51 @@ a {
 }
 
 .portfolio-info h4 {
-    font-size: 18px;
+    font-size: 16px; /* Ukuran proporsional */
     font-weight: 600;
     margin: 0;
-    color: var(--color-accent);
+    color: #ffffff; /* Nama project putih agar tegas */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .portfolio-info span {
-    font-size: 13px;
-    color: var(--color-text-muted);
+    font-size: 12px;
+    color: var(--color-accent); /* Detail tech pakai warna accent */
     display: block;
-    margin-top: 5px;
+    margin: 5px 0 15px 0; /* Jarak bawah 15px untuk memisahkan dengan tombol */
 }
 
-/* 5. Tombol Aksi di pojok overlay */
+/* 5. Perbaikan Tombol Aksi agar berada DI BAWAH teks */
 .portfolio-info a {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%); /* Menengahkan tombol secara vertikal di overlay */
-    width: 40px;
-    height: 40px;
-    display: flex;
+    /* Hapus position absolute & transform lama */
+    position: relative; 
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     background: var(--color-accent);
-    border-radius: 50%;
+    border-radius: 4px; /* Kotak rounded lebih profesional daripada bulat */
     color: var(--color-dark-primary);
     transition: all 0.3s;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 8px 18px; /* Padding tombol yang proporsional */
+    font-weight: bold;
+    text-decoration: none;
+    gap: 8px; /* Jarak icon dan teks di dalam tombol */
+}
+
+/* Jika ada dua tombol bersampingan (Container baru) */
+.portfolio-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
 }
 
 .portfolio-info a:hover {
     background: #fff;
     box-shadow: var(--shadow-glow);
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-2px); /* Efek melayang sedikit */
 }
 
 /* 6. Penyesuaian Responsif untuk HP */
