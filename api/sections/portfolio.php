@@ -9,22 +9,27 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <img src="assets/img/proyek-sap-erp6.jpg" alt="SYSTEM SAP-ERP">
-                <div class="portfolio-info" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
-                    <h4 style="color: #fff !important; margin-bottom: 5px;">SYSTEM SAP-ERP</h4>
-                    <span style="color: #00d4ff !important; display: block; margin-bottom: 20px; font-size: 0.85rem;">Desktop App: PHPDesktop, PHP Native & MySQL</span>
+                <div class="portfolio-info" style="display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; padding: 15px !important;">
                     
-                    <div class="portfolio-buttons" style="display: flex; gap: 12px; align-items: center; justify-content: center;">
+                    <div class="text-area" style="margin-bottom: 15px !important;">
+                        <h4 style="color: #fff !important; margin: 0 0 5px 0 !important; font-size: 1.2rem;">SYSTEM SAP-ERP</h4>
+                        <span style="color: #00d4ff !important; display: block !important; font-size: 0.85rem; line-height: 1.4;">
+                            Desktop App: PHPDesktop, PHP Native & MySQL
+                        </span>
+                    </div>
+                    
+                    <div class="button-area" style="display: flex !important; gap: 10px !important; justify-content: center !important; width: 100% !important;">
                         <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" 
                            target="_blank" 
                            class="btn btn-sm" 
-                           style="background-color: #00d4ff !important; color: #ffffff !important; border: none; font-weight: bold; padding: 8px 16px; border-radius: 4px; display: inline-flex; align-items: center; text-decoration: none;"
+                           style="background-color: #00d4ff !important; color: #ffffff !important; border: none !important; font-weight: bold !important; padding: 6px 15px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; text-decoration: none !important;"
                            title="Download Installer">
-                            <i class="fas fa-download" style="margin-right: 8px; color: #ffffff !important;"></i> Setup
+                            <i class="fas fa-download" style="margin-right: 6px !important; color: #ffffff !important;"></i> Setup
                         </a>
 
                         <a href="assets/img/proyek-sap-erp6.jpg" 
                            class="glightbox btn btn-sm btn-outline-light" 
-                           style="padding: 8px 12px; border-radius: 4px; display: inline-flex; align-items: center;"
+                           style="padding: 6px 12px !important; border-radius: 4px !important; display: inline-flex !important; align-items: center !important; border: 1px solid #ffffff !important; color: #ffffff !important;"
                            data-gallery="gallery-sap" 
                            data-title="<span style='color:#00d4ff'>SYSTEM SAP-ERP - Dashboard</span>" 
                            data-description="<span style='color:#fff'>Tampilan utama sistem manajemen sumber daya perusahaan.</span>">
