@@ -9,22 +9,22 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <img src="assets/img/proyek-sap-erp6.jpg" alt="SYSTEM SAP-ERP">
-                <div class="portfolio-info" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div class="portfolio-info" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
                     <h4 style="color: #fff !important; margin-bottom: 5px;">SYSTEM SAP-ERP</h4>
-                    <span style="color: #00d4ff !important; display: block; margin-bottom: 15px; font-size: 0.85rem;">Desktop App: PHPDesktop, PHP Native & MySQL</span>
+                    <span style="color: #00d4ff !important; display: block; margin-bottom: 20px; font-size: 0.85rem;">Desktop App: PHPDesktop, PHP Native & MySQL</span>
                     
-                    <div class="portfolio-buttons" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
+                    <div class="portfolio-buttons" style="display: flex; gap: 12px; align-items: center; justify-content: center;">
                         <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" 
                            target="_blank" 
                            class="btn btn-sm" 
-                           style="background-color: #00d4ff !important; color: #ffffff !important; border: none; font-weight: bold; padding: 6px 12px; border-radius: 4px; display: inline-flex; align-items: center; text-decoration: none;"
+                           style="background-color: #00d4ff !important; color: #ffffff !important; border: none; font-weight: bold; padding: 8px 16px; border-radius: 4px; display: inline-flex; align-items: center; text-decoration: none;"
                            title="Download Installer">
-                            <i class="fas fa-download" style="margin-right: 5px; color: #ffffff !important;"></i> Setup
+                            <i class="fas fa-download" style="margin-right: 8px; color: #ffffff !important;"></i> Setup
                         </a>
 
                         <a href="assets/img/proyek-sap-erp6.jpg" 
                            class="glightbox btn btn-sm btn-outline-light" 
-                           style="padding: 6px 10px; border-radius: 4px; display: inline-flex; align-items: center;"
+                           style="padding: 8px 12px; border-radius: 4px; display: inline-flex; align-items: center;"
                            data-gallery="gallery-sap" 
                            data-title="<span style='color:#00d4ff'>SYSTEM SAP-ERP - Dashboard</span>" 
                            data-description="<span style='color:#fff'>Tampilan utama sistem manajemen sumber daya perusahaan.</span>">
