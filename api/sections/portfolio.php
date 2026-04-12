@@ -10,15 +10,22 @@
             <div class="portfolio-item">
                 <img src="assets/img/proyek-sap-erp1.jpg" alt="SYSTEM SAP-ERP">
                 <div class="portfolio-info">
-                    <h4>SYSTEM SAP-ERP</h4>
-                    <span>Desktop App: PHPDesktop, PHP Native & MySQL</span>
+                    <h4 style="color: #fff;">SYSTEM SAP-ERP</h4>
+                    <span style="color: #00d4ff;">Desktop App: PHPDesktop, PHP Native & MySQL</span>
                     <div class="mt-2">
-                        <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" target="_blank" class="btn btn-sm btn-primary" title="Download Installer">
+                        <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" target="_blank" class="btn btn-sm btn-info text-white" title="Download Installer">
                             <i class="fas fa-download"></i> Download Setup
                         </a>
-                        <a href="assets/img/proyek-sap-erp1.jpg" class="glightbox btn btn-sm btn-outline-light" data-title="SYSTEM SAP-ERP (Desktop Version)">
+                        <a href="assets/img/proyek-sap-erp1.jpg" class="glightbox btn btn-sm btn-outline-light" 
+                           data-gallery="gallery-sap" 
+                           data-title="<span style='color:#00d4ff'>SYSTEM SAP-ERP - Dashboard</span>" 
+                           data-description="<span style='color:#fff'>Tampilan utama sistem manajemen sumber daya perusahaan.</span>">
                             <i class="fas fa-search-plus"></i>
                         </a>
+                        <a href="assets/img/proyek-sap-erp2.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Fitur Inventaris</span>" data-description="<span style='color:#fff'>Manajemen stok barang secara real-time.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp3.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Laporan Keuangan</span>" data-description="<span style='color:#fff'>Generasi laporan otomatis berbasis periode.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp4.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Manajemen User</span>" data-description="<span style='color:#fff'>Pengaturan hak akses tingkat tinggi.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp5.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Database Integrasi</span>" data-description="<span style='color:#fff'>Struktur MySQL yang dioptimalkan.</span>" style="display:none;"></a>
                     </div>
                 </div>
             </div>
@@ -26,9 +33,9 @@
             <div class="portfolio-item">
                 <img src="assets/img/project_toefl.jpg" alt="Sistem Ujian Digital">
                 <div class="portfolio-info">
-                    <h4>Sistem Ujian Digital (TOEFL)</h4>
-                    <span>Custom Native PHP, MySQL & Integrasi Audio</span>
-                    <a href="assets/img/project_toefl.jpg" class="glightbox" data-title="Sistem Ujian Digital (TOEFL)">
+                    <h4 style="color: #fff;">Sistem Ujian Digital (TOEFL)</h4>
+                    <span style="color: #00d4ff;">Custom Native PHP, MySQL & Integrasi Audio</span>
+                    <a href="assets/img/project_toefl.jpg" class="glightbox" data-title="<span style='color:#fff'>Sistem Ujian Digital (TOEFL)</span>">
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
@@ -37,9 +44,9 @@
             <div class="portfolio-item">
                 <img src="assets/img/project_absensi.jpg" alt="Sistem Absensi Barcode">
                 <div class="portfolio-info">
-                    <h4>Sistem Absensi Barcode</h4>
-                    <span>PHP Native & Real-time Database Scan</span>
-                    <a href="assets/img/project_absensi.jpg" class="glightbox" data-title="Sistem Absensi Barcode">
+                    <h4 style="color: #fff;">Sistem Absensi Barcode</h4>
+                    <span style="color: #00d4ff;">PHP Native & Real-time Database Scan</span>
+                    <a href="assets/img/project_absensi.jpg" class="glightbox" data-title="<span style='color:#fff'>Sistem Absensi Barcode</span>">
                         <i class="fas fa-plus"></i>
                     </a>
                 </div>
@@ -55,9 +62,9 @@
             <div class="portfolio-item">
                 <img src="assets/img/desain_stiker.jpeg" alt="Visual Branding">
                 <div class="portfolio-info">
-                    <h4>Visual Branding & Identity</h4>
-                    <span>Album: Banner, Stiker & Kreatif</span>
-                    <a href="assets/img/desain_stiker.jpeg" class="glightbox" data-gallery="gallery-branding" data-title="Desain Stiker">
+                    <h4 style="color: #fff;">Visual Branding & Identity</h4>
+                    <span style="color: #00d4ff;">Album: Banner, Stiker & Kreatif</span>
+                    <a href="assets/img/desain_stiker.jpeg" class="glightbox" data-gallery="gallery-branding" data-title="<span style='color:#fff'>Desain Stiker</span>">
                         <i class="fas fa-images"></i> 
                     </a>
                     <a href="assets/img/desain_surat_suara.jpeg" class="glightbox" data-gallery="gallery-branding" style="display:none;"></a>
@@ -69,9 +76,9 @@
             <div class="portfolio-item">
                 <img src="assets/img/potret_p_nuvasabay.jpg" alt="Photography & Moment">
                 <div class="portfolio-info">
-                    <h4>Photography & Moment</h4>
-                    <span>Album: Dokumentasi Edukasi & Kegiatan</span>
-                    <a href="assets/img/potret_p_nuvasabay.jpg" class="glightbox" data-gallery="gallery-photography" data-title="Photography">
+                    <h4 style="color: #fff;">Photography & Moment</h4>
+                    <span style="color: #00d4ff;">Album: Dokumentasi Edukasi & Kegiatan</span>
+                    <a href="assets/img/potret_p_nuvasabay.jpg" class="glightbox" data-gallery="gallery-photography" data-title="<span style='color:#fff'>Photography</span>">
                         <i class="fas fa-images"></i> 
                     </a>
                     <a href="assets/img/potret_kibs.jpg" class="glightbox" data-gallery="gallery-photography" style="display:none;"></a>
@@ -88,9 +95,9 @@
                     <source src="assets/img/video_taruna.mp4" type="video/mp4">
                 </video>
                 <div class="portfolio-info">
-                    <h4>Dokumentasi Proyek Teknis</h4>
-                    <span>Videografi & Editing</span>
-                    <a href="assets/img/video_taruna.mp4" class="glightbox" data-glightbox="type: video; width: 900;" data-title="Video Dokumentasi">
+                    <h4 style="color: #fff;">Dokumentasi Proyek Teknis</h4>
+                    <span style="color: #00d4ff;">Videografi & Editing</span>
+                    <a href="assets/img/video_taruna.mp4" class="glightbox" data-glightbox="type: video; width: 900;" data-title="<span style='color:#fff'>Video Dokumentasi</span>">
                         <i class="fas fa-play"></i>
                     </a>
                 </div>
