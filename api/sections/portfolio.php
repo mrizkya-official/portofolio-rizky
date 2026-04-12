@@ -8,7 +8,7 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="assets/img/proyek-sap-erp1.jpg" alt="SYSTEM SAP-ERP">
+                <img src="assets/img/proyek-sap-erp6.jpg" alt="SYSTEM SAP-ERP">
                 <div class="portfolio-info">
                     <h4 style="color: #fff;">SYSTEM SAP-ERP</h4>
                     <span style="color: #00d4ff;">Desktop App: PHPDesktop, PHP Native & MySQL</span>
@@ -16,16 +16,17 @@
                         <a href="https://drive.google.com/file/d/1k1QUy271AQQZqoYq7l8wnE5J2AIxjW2k/view?usp=sharing" target="_blank" class="btn btn-sm btn-info text-white" title="Download Installer">
                             <i class="fas fa-download"></i> Download Setup
                         </a>
-                        <a href="assets/img/proyek-sap-erp1.jpg" class="glightbox btn btn-sm btn-outline-light" 
+                        <a href="assets/img/proyek-sap-erp6.jpg" class="glightbox btn btn-sm btn-outline-light" 
                            data-gallery="gallery-sap" 
                            data-title="<span style='color:#00d4ff'>SYSTEM SAP-ERP - Dashboard</span>" 
                            data-description="<span style='color:#fff'>Tampilan utama sistem manajemen sumber daya perusahaan.</span>">
                             <i class="fas fa-search-plus"></i>
                         </a>
-                        <a href="assets/img/proyek-sap-erp2.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Fitur Inventaris</span>" data-description="<span style='color:#fff'>Manajemen stok barang secara real-time.</span>" style="display:none;"></a>
-                        <a href="assets/img/proyek-sap-erp3.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Laporan Keuangan</span>" data-description="<span style='color:#fff'>Generasi laporan otomatis berbasis periode.</span>" style="display:none;"></a>
-                        <a href="assets/img/proyek-sap-erp4.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Manajemen User</span>" data-description="<span style='color:#fff'>Pengaturan hak akses tingkat tinggi.</span>" style="display:none;"></a>
-                        <a href="assets/img/proyek-sap-erp5.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Database Integrasi</span>" data-description="<span style='color:#fff'>Struktur MySQL yang dioptimalkan.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp1.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Fitur Inventaris</span>" data-description="<span style='color:#fff'>Halaman Dashboard</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp2.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Laporan Keuangan</span>" data-description="<span style='color:#fff'>Halaman Manajemen Proyek.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp3.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Manajemen User</span>" data-description="<span style='color:#fff'>Halaman Keuangan & Billing.</span>" style="display:none;"></a>
+                        <a href="assets/img/proyek-sap-erp4.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Database Integrasi</span>" data-description="<span style='color:#fff'>Halaman Kelola Karyawan.</span>" style="display:none;"></a>
+						<a href="assets/img/proyek-sap-erp5.jpg" class="glightbox" data-gallery="gallery-sap" data-title="<span style='color:#00d4ff'>Database Integrasi</span>" data-description="<span style='color:#fff'>Halaman Profil Perusahaan.</span>" style="display:none;"></a>
                     </div>
                 </div>
             </div>
